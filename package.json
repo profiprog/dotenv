@@ -1,0 +1,33 @@
+{
+  "name": "@profiprog/dotenv",
+  "version": "1.1.3",
+  "description": "Command line tool for loading .env files into shel and more...",
+  "main": "dotenv.js",
+  "bin": {
+    "dotenv": "dotenv.js"
+  },
+  "scripts": {
+    "test": "echo \"No test specified yet\"",
+    "preversion": "npm test",
+    "postversion": "git push --follow-tags",
+    "pkg": "pkg -o dist/dotenv-v${npm_package_version} -t node12-linux-x64,node12-macos-x64,node12-win-x64 ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solargis/dotenv.git"
+  },
+  "keywords": [
+    "env",
+    "dotenv",
+    "bash"
+  ],
+  "author": "Milan Skuhra (at profiprog.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solargis/dotenv/issues"
+  },
+  "homepage": "https://github.com/solargis/dotenv#readme",
+  "devDependencies": {
+    "pkg": "^4.4.8"
+  }
+}
